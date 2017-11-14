@@ -16,8 +16,10 @@ Yet, it is very easy to use. You need to learn only a few things:
 
 1. You have to **always** pass whatever dynamical data into the query via *placeholder*
 2. Each placeholder have to be marked with data type. At the moment there are six types:
- * ?s ("string")  - strings (also ```DATE```, ```FLOAT``` and ```DECIMAL```)
+ * ?s ("string")  - strings (also ```DATE``` and ```DECIMAL```)
+ * ?h ("string")  - strings with cut tags <script>, <iframe> only
  * ?i ("integer") - the name says it all 
+ * ?f ("float")   - the name says it all 
  * ?n ("name")    - identifiers (table and field names) 
  * ?a ("array")   - complex placeholder for ```IN()``` operator  (substituted with string of 'a','b','c' format, without parentesis)
  * ?u ("update")  - complex placeholder for ```SET``` operator (substituted with string of `field`='value',`field`='value' format)
